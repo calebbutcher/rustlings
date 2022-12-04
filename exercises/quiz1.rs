@@ -10,11 +10,18 @@
 // Write a function that calculates the price of an order of apples given
 // the quantity bought. No hints this time!
 
-// I AM NOT DONE
+const discount: i32 = 40;
 
 // Put your function here!
-// fn calculate_price_of_apples {
-
+fn calculate_price_of_apples(apples: i32) -> i32 {
+    let mut ppa = 2;
+    if apples > discount {
+        let ppa = 1;
+        return ppa * apples;
+    } else {
+        return ppa * apples;
+    }
+}
 // Don't modify this function!
 #[test]
 fn verify_test() {
